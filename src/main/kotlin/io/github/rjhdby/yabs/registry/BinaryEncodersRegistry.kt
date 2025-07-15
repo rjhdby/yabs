@@ -4,6 +4,7 @@ import io.github.rjhdby.yabs.TypeEncoder
 import io.github.rjhdby.yabs.types.DoubleEncoder
 import io.github.rjhdby.yabs.types.FloatEncoder
 import io.github.rjhdby.yabs.types.InstantEncoder
+import io.github.rjhdby.yabs.types.JavaUuidEncoder
 import io.github.rjhdby.yabs.types.StringEncoder
 import io.github.rjhdby.yabs.types.KotlinUuidEncoder
 import io.github.rjhdby.yabs.types.VariableLengthIntEncoder
@@ -26,6 +27,7 @@ object BinaryEncodersRegistry {
             FloatEncoder,
             DoubleEncoder,
             KotlinUuidEncoder,
+            JavaUuidEncoder,
             InstantEncoder,
         ).forEach { registerOrReplace(it) }
     }
