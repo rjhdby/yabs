@@ -1,2 +1,2 @@
-rootProject.name = "simple-binary-encoder"
+rootProject.name = "yabs"
 
